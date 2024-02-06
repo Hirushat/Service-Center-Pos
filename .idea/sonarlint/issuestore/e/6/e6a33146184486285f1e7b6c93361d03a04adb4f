@@ -1,0 +1,6 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Æ“Î×Ö1
+¶
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(® ©þ8Í“Î×Ö1
+X
+java:S6437"6Revoke and change this password, as it is compromised.(ÃÚªÊÿÿÿÿÿ8Ó“Î×Ö1
