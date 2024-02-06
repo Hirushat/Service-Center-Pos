@@ -1,18 +1,13 @@
-package edu.icet.entity;
+package edu.icet.dto;
 
 import lombok.*;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
-@Entity
-public class User {
-    @Id
+public class UserDto {
     private String eMail;
     private String passWord;
     private String userType;

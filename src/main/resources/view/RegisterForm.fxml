@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -13,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 <BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.RegisterFormController">
-   <center>
+   <bottom>
       <GridPane alignment="CENTER" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="102.0" />
@@ -58,7 +57,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXPasswordField fx:id="txtNewPassword" alignment="CENTER" promptText="Enter New Password" GridPane.columnIndex="1" />
+                  <JFXTextField fx:id="txtNewPassword" alignment="CENTER" promptText="Enter New Password" GridPane.columnIndex="1" />
                </children>
             </GridPane>
             <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
@@ -68,24 +67,24 @@
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="82.0" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXPasswordField fx:id="txtRepeatPassword" alignment="CENTER" promptText="Repeat Password" GridPane.columnIndex="1" />
+                  <JFXTextField fx:id="txtRepeatPassword" alignment="CENTER" promptText="Repeat Password" GridPane.columnIndex="1" />
                </children>
             </GridPane>
-            <JFXButton fx:id="btnRegister" onAction="#RegisterButtonOnAction" prefHeight="31.0" prefWidth="107.0" text="Register" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-            <JFXComboBox fx:id="selectUserType" prefHeight="31.0" prefWidth="84.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
-               <GridPane.margin>
-                  <Insets left="108.0" />
-               </GridPane.margin>
-            </JFXComboBox>
+            <JFXButton fx:id="btnRegister" onAction="#registerButtonOnAction" prefHeight="31.0" prefWidth="107.0" text="Register" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
             <Label text="Select User Type :" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="75.0" />
                </GridPane.margin>
             </Label>
+            <JFXComboBox fx:id="cmbSelectType" prefHeight="31.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="111.0" />
+               </GridPane.margin>
+            </JFXComboBox>
          </children>
       </GridPane>
-   </center>
+   </bottom>
 </BorderPane>
