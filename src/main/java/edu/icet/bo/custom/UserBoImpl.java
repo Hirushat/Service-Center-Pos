@@ -22,7 +22,11 @@ public class UserBoImpl implements UserBo {
 
     @Override
     public boolean updateUser(UserDto dto) throws SQLException {
-        return false;
+        return userDao.update(new User(
+                dto.getEMail(),
+                dto.getPassWord(),
+                dto.getUserType()
+        ));
     }
 
     @Override

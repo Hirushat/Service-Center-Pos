@@ -1,3 +1,9 @@
 
+t
+java:S1192"RDefine a constant instead of duplicating this literal "hibernate.cfg.xml" 3 times.(ÌË»ûÿÿÿÿ8ˆæû×1
+g
+java:S2095#"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ8¨æû×1
+g
+java:S20955"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ8ãçû×1
 H
-java:S1168)"+Return an empty collection instead of null.(¥¹ï8Ğİ—÷×1
+java:S1168>"+Return an empty collection instead of null.(¥¹ï8Üæû×1

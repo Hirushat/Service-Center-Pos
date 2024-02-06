@@ -17,6 +17,7 @@ public class LoginFormController {
     }
 
     public void loginButtonOnAction(ActionEvent actionEvent) {
+
     }
 
 }

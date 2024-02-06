@@ -17,12 +17,12 @@ import java.util.Objects;
 
 public class RegisterFormController {
     public JFXComboBox cmbSelectType;
-    private UserBo userBo = new UserBoImpl();
-
     public JFXTextField txtMailAddress;
     public JFXTextField txtNewPassword;
     public JFXTextField txtRepeatPassword;
     public JFXButton btnRegister;
+
+    private UserBo userBo = new UserBoImpl();
 
     public void initialize() {
         ObservableList<String> stringList = FXCollections.observableArrayList("Default", "Admin");
