@@ -1,11 +1,13 @@
 package edu.icet.dao.util.custom.impl;
 
+import edu.icet.dao.util.HibernateUtil;
 import edu.icet.dao.util.custom.UserDao;
 import edu.icet.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -13,12 +15,7 @@ import java.util.List;
 public class UserDaoImpl implements UserDao {
     @Override
     public boolean save(User entity) throws SQLException {
-        Configuration configuration = new Configuration()
-                .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(User.class);
-
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        Session session = HibernateUtil.getSession();;
         Transaction transaction = session.beginTransaction();
         session.save(entity);
         transaction.commit();
@@ -28,11 +25,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public boolean update(User entity) throws SQLException {
-        Configuration configuration = new Configuration()
-                .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(User.class);
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
         User user = session.find(User.class, entity.getEMail());
         user.setEMail(entity.getEMail());
@@ -45,12 +38,8 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public boolean delete(String value) throws SQLException {
-        Configuration configuration = new Configuration()
-                .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(User.class);
 
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
         session.delete(session.find(User.class,value));
         transaction.commit();
@@ -59,7 +48,10 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public List<User> getAll() throws SQLException {
-        return null;
+        Session session = HibernateUtil.getSession();
+        Query query = session.createQuery("FROM User");
+        List<User> list = query.list();
+        return list;
     }
 
 }

@@ -1,9 +1,11 @@
 
-t
-java:S1192"RDefine a constant instead of duplicating this literal "hibernate.cfg.xml" 3 times.(ÌË»ûÿÿÿÿ8ˆæû×1
-g
-java:S2095#"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ8¨æû×1
-g
-java:S20955"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ8ãçû×1
-H
-java:S1168>"+Return an empty collection instead of null.(¥¹ï8Üæû×1
+Q
+java:S37404"/Provide the parametrized type for this generic.(¾èøøÿÿÿÿ8’£¶ü×1
+y
+java:S14885"\Immediately return this expression instead of assigning it to the temporary variable "list".(±È±ß8äşÇü×1
+9
+java:S1116"Remove this empty statement.(ğõ¿•8³£¶ü×1
+[
+java:S1128"9Remove this unused import 'org.hibernate.SessionFactory'.(ñ¦«¬şÿÿÿÿ8»£¶ü×1
+Y
+java:S1128	"<Remove this unused import 'org.hibernate.cfg.Configuration'.(ö¬ä8»£¶ü×1
