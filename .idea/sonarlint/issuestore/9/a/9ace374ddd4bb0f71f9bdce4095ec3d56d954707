@@ -1,22 +1,29 @@
 
 x
-java:S1104"\Make btnCreateAccount a static final constant or non-public and provide accessors if needed.(ÿæ÷_8¶°ñÕÖ1
+java:S1104"\Make btnCreateAccount a static final constant or non-public and provide accessors if needed.(ÿæ÷_8øÃ“Ø1
 s
-java:S1104	"VMake btnReports a static final constant or non-public and provide accessors if needed.(–ÒØö8ÉÉñÕÖ1
+java:S1104"VMake btnReports a static final constant or non-public and provide accessors if needed.(–ÒØö8øÃ“Ø1
 z
-java:S1104
-"XMake btnCustomers a static final constant or non-public and provide accessors if needed.(øÉø¡øÿÿÿÿ8ĞâñÕÖ1
+java:S1104"XMake btnCustomers a static final constant or non-public and provide accessors if needed.(øÉø¡øÿÿÿÿ8øÃ“Ø1
 x
-java:S1104"[Make btnInventoryMgt a static final constant or non-public and provide accessors if needed.(ï„¿®8¿ƒòÕÖ1
+java:S1104"[Make btnInventoryMgt a static final constant or non-public and provide accessors if needed.(ï„¿®8øÃ“Ø1
 x
-java:S1104"VMake btnOderMgt a static final constant or non-public and provide accessors if needed.(¯¦Èîøÿÿÿÿ8ç™òÕÖ1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹‚úûÿÿÿÿÿ8²ğÕÖ1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°°Î­ıÿÿÿÿ8ÖÎğÕÖ1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Š¿øĞøÿÿÿÿ8«æğÕÖ1
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¬Üç8ÖığÕÖ1
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(µ‡•š8Ò˜ñÕÖ1
+java:S1104"VMake btnOderMgt a static final constant or non-public and provide accessors if needed.(¯¦Èîøÿÿÿÿ8øÃ“Ø1
+r
+java:S1104"PMake pane a static final constant or non-public and provide accessors if needed.(ÃéÇ¶ûÿÿÿÿ8øÃ“Ø1
+q
+java:S1104"TMake lblLogin a static final constant or non-public and provide accessors if needed.(ê÷Îì8øÃ“Ø1
+s
+java:S1104"QMake login a static final constant or non-public and provide accessors if needed.(‰”œùÿÿÿÿ8øÃ“Ø1
+M
+java:S1444"+Make this "public static login" field final(‰”œùÿÿÿÿ8øÃ“Ø1
+‡
+java:S4144A"jUpdate this method so that its implementation is not identical to "inventoryMgtButtonOnAction" on line 51.(ä‹Éæ8æÙ‚“Ø1
+]	java:S125&"<This block of commented-out lines of code should be removed.(Ü£¨¶úÿÿÿÿ8½Ä“Ø1
+]	java:S125-"<This block of commented-out lines of code should be removed.(Ü£¨¶úÿÿÿÿ8¾Ä“Ø1
+O
+java:S11723"2Remove this unused method parameter "actionEvent".(ßüİ”8¿Ä“Ø1
+T
+java:S1172:"2Remove this unused method parameter "actionEvent".(±•¡şÿÿÿÿ8ËÄ“Ø1
+O
+java:S1172A"2Remove this unused method parameter "actionEvent".(ä‹Éæ8Íüã˜Ø1

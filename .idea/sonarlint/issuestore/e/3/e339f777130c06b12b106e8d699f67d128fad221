@@ -1,11 +1,7 @@
 
 Q
-java:S37404"/Provide the parametrized type for this generic.(Ž¾èøøÿÿÿÿ8’£¶ü×1
+java:S37401"/Provide the parametrized type for this generic.(Ž¾èøøÿÿÿÿ8³µÁ˜Ø1
 y
-java:S14885"\Immediately return this expression instead of assigning it to the temporary variable "list".(±È±ß8äþÇü×1
+java:S14882"\Immediately return this expression instead of assigning it to the temporary variable "list".(±È±ß8¶µÁ˜Ø1
 9
-java:S1116"Remove this empty statement.(ðõ¿•8³£¶ü×1
-[
-java:S1128"9Remove this unused import 'org.hibernate.SessionFactory'.(ñ¦«¬þÿÿÿÿ8»£¶ü×1
-Y
-java:S1128	"<Remove this unused import 'org.hibernate.cfg.Configuration'.(ö¬ä8»£¶ü×1
+java:S1116"Remove this empty statement.(ðõ¿•8…¶Á˜Ø1

@@ -1,18 +1,13 @@
-package edu.icet.entity;
+package edu.icet.dto;
 
 import lombok.*;
-
-import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
-@Entity
-
-public class Customer {
-    @Id
+public class CustomerDto {
     private String id;
     private String name;
     private String contactNumber;

@@ -1,12 +1,13 @@
-package edu.icet.bo.custom;
+package edu.icet.bo.custom.impl;
 
-import edu.icet.bo.UserBo;
+import edu.icet.bo.custom.UserBo;
 import edu.icet.dao.util.custom.UserDao;
 import edu.icet.dao.util.custom.impl.UserDaoImpl;
 import edu.icet.dto.UserDto;
 import edu.icet.entity.User;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserBoImpl implements UserBo {
@@ -31,12 +32,21 @@ public class UserBoImpl implements UserBo {
 
     @Override
     public boolean deleteUser(String id) throws SQLException {
-        return false;
+        return userDao.delete(id);
     }
 
     @Override
     public List<UserDto> allUsers() throws SQLException {
-        return null;
+        List<User> entityList = userDao.getAll();
+        List<UserDto> list = new ArrayList<>();
+        for (User user: entityList) {
+            list.add(new UserDto(
+                    user.getEMail(),
+                    user.getPassWord(),
+                    user.getUserType()
+            ));
+        }
+        return list;
     }
 
 }

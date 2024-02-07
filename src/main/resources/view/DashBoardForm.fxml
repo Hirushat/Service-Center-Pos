@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.DashBoardFormController">
-   <center>
+<BorderPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.DashBoardFormController">
+   <top>
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="223.0" />
@@ -24,12 +26,18 @@
           <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="btnOderMgt" alignment="CENTER" onAction="#orderMgtButtonOnAction" prefHeight="31.0" prefWidth="183.0" text="Order Management" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="btnInventoryMgt" alignment="CENTER" onAction="#inventoryMgtButtonOnAction" prefHeight="31.0" prefWidth="183.0" text="Inventory Management" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="btnOderMgt" alignment="CENTER" onAction="#orderMgtButtonOnAction" prefHeight="31.0" prefWidth="183.0" text="Place Order" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="btnInventoryMgt" alignment="CENTER" onAction="#inventoryMgtButtonOnAction" prefHeight="31.0" prefWidth="183.0" text="Inventory" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <JFXButton fx:id="btnCustomers" alignment="CENTER" onAction="#customerBtnOnAction" prefHeight="31.0" prefWidth="183.0" text="Customers" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <JFXButton fx:id="btnReports" alignment="CENTER" onAction="#reportBtnOnAction" prefHeight="31.0" prefWidth="183.0" text="Reports" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <JFXButton fx:id="btnCreateAccount" alignment="CENTER" onAction="#createButtonOnAction" prefHeight="31.0" prefWidth="186.0" text="Create User Account" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="lblLogin" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="195.0" style="-fx-background-color: #cccccc;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
          </children>
       </GridPane>
-   </center>
+   </top>
 </BorderPane>
